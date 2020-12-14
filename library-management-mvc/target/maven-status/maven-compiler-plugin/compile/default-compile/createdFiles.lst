@@ -1,0 +1,16 @@
+controller\UploadImage.class
+controller\Logout.class
+controller\DisplayAllUser.class
+controller\AddNewBook.class
+controller\BarrowBook.class
+util\Util.class
+controller\ReturnBook.class
+model\Staff.class
+model\Service.class
+controller\DisplayBook.class
+model\Student.class
+controller\Login.class
+model\Book.class
+controller\Signup.class
+controller\DisplayAllBook.class
+model\User.class

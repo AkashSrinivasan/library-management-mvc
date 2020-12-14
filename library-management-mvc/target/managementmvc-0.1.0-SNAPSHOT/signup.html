@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Signup page</title>
+<style>
+	h1{
+		text-align: center;
+	}
+	Body {
+		font-family: sans-serif;
+		}
+	button {
+		width: 100%;
+		padding: 15px;
+		margin: 10px 0px; 
+		border: none;
+		cursor: pointer;
+		}
+	form {
+		border: 3px solid black;
+		margin-left: 25%;
+		margin-right: 25%;
+		}
+	input[type=text], input[type=password],input[type=number]{
+		width: 100%;
+		margin: 8px 0;
+		padding: 12px 20px;
+		display: inline-block;
+		box-sizing: border-box;
+		}
+	button:hover {
+		opacity: 0.7;
+		}
+	.cancelbtn {
+		width: auto;
+		padding: 10px 18px;
+		margin: 10px 5px;
+		}
+	.container {
+		padding: 25px; 
+		}
+</style>
+</head>
+<body>
+	<h1>Signup Form</h1>
+	<form action="signup" method="POST" enctype="multipart/form-data">
+		<div class="container">
+			<label>Id : </label>
+				<input type="number" placeholder="Enter Id" name="id" required><br>
+			<label>Username : </label>
+				<input type="text" placeholder="Enter Username" name="username" required><br>
+			<label>Password : </label>
+				<input type="password" placeholder="Enter Password" name="password" required><br><br>
+			<label>Upload Profile Photo : </label>
+				<input type="file" name="myFile" required><br><br>
+			<label>Select : </label>
+				<select name="userType" id="userType">
+					<option value="Student">Student</option>
+					<option value="Staff">Staff</option>
+				</select><br>
+			<button type="submit">Signup</button><br>
+			Already have account ? <a href="index.jsp">login</a>
+		</div> 
+	</form><br>
+
+</body>
+</html>
